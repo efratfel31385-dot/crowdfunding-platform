@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+const tromutschema=new mongoose.Schema({
+   code:Number,
+   firstName:String,
+   lastName:String,
+   sum:Number,
+
+})
+
+const tromutModel = mongoose.model("tromut",tromutschema)
+exports.tromutschema=tromutModel

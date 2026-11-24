@@ -1,0 +1,9 @@
+const mongoose = require('mongoose');
+const groupschema=new mongoose.Schema({
+    code:Number,
+    name:String,
+    yaad:Number,
+
+})
+const groupsModel = mongoose.model("groups",groupschema)
+exports.groupschema=groupsModel

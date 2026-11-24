@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+const turmimschema=new mongoose.Schema({
+    id:Number,
+    firstName:String,
+    lastName:String,
+    country:String,
+    phone:Number
+
+})
+const turmimModel = mongoose.model("turmim",turmimschema)
+exports.turmimschema=turmimModel

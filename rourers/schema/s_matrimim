@@ -1,0 +1,11 @@
+const mongoose = require('mongoose');
+const matrimimschema=new mongoose.Schema({
+   id:Number,
+   firstName:String,
+   lastName:String,
+   country:String,
+   phone:String,
+
+})
+const matrimimModel = mongoose.model("matrimim",matrimimschema)
+exports.matrimimschema=matrimimModel;
